@@ -5,6 +5,8 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\BPDController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\PemerintahDesaController;
+use App\Http\Controllers\PengaduanController;
+use App\Http\Controllers\TanggapanController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -56,12 +58,12 @@ Route::resource('bpd', BPDController::class);
 Route::resource('pemerintah_desa', PemerintahDesaController::class);
 
 
-// Route::put('/pengaduan/respon/{pengaduan}', [PengaduanController::class, 'response']);
-// Route::get('/pengaduan/belum', [PengaduanController::class, 'belum']);
-// Route::get('/pengaduan/proses', [PengaduanController::class, 'proses']);
-// Route::get('/pengaduan/selesai', [PengaduanController::class, 'selesai']);
-// Route::resource('/pengaduan', PengaduanController::class);
-// Route::resource('/tanggapan', TanggapanController::class);
+Route::put('/pengaduan/respon/{pengaduan}', [PengaduanController::class, 'response']);
+Route::get('/pengaduan/belum', [PengaduanController::class, 'belum']);
+Route::get('/pengaduan/proses', [PengaduanController::class, 'proses']);
+Route::get('/pengaduan/selesai', [PengaduanController::class, 'selesai']);
+Route::resource('/pengaduan', PengaduanController::class);
+Route::resource('/tanggapan', TanggapanController::class);
 
 // Route::put('/pengajuan-surat/{pengajuan_surat}/approve', [PengajuanSuratController::class, 'approve'])->middleware('auth')->name('pengajuan_surat.approve');
 // Route::put('/pengajuan-surat/{pengajuan_surat}/reject', [PengajuanSuratController::class, 'reject'])->middleware('auth')->name('pengajuan_surat.reject');

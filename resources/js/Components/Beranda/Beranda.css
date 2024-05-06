@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+
+/*-----------------------------------------CAROUSEL----------------------------------------------*/
+.container-carousel {
+  margin-bottom: 50px;
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.sub-judul-carousel {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.judul-carousel {
+  margin-left: 60px;
+}
+
+.baca-sejarah {
+  margin-left: 60px;
+}
+
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Lebar penuh */
+  height: 90vh;
+  /* Tinggi sesuai tinggi viewport */
+}
+
+.carousel-item img {
+  width: 100%;
+  /* Lebar penuh */
+  height: 100%;
+  /* Tinggi penuh */
+  object-fit: cover;
+  /* Menyesuaikan gambar ke dalam ukuran kontainer */
+}
+
+/*------------------------------------------------ SAMBUTAN--------------------------------------------- */
+.sambutan {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.image {
+  width: 400%;
+  margin-top: 50px;
+}
+
+
+.description {
+  margin-bottom: 1rem;
+  /* Jarak bawah antara paragraf */
+  line-height: 1.5;
+  /* Tinggi baris */
+  text-align: justify;
+  /* Penjajaran teks ke rata kiri dan kanan */
+}
+
+/* -------------------------------------------FITUR DESA--------------------------------------------------- */
+.container-fitur {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.judul-fitur {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.sub-judul-fitur {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-fitur {
+  width: calc(33% - 10px);
+  /* Mengatur agar card memenuhi layar kesamping */
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-fitur:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.2);
+  /* Efek bayangan saat hover */
+}
+
+.card-fitur img {
+  display: block;
+  margin: 0 auto;
+  /* Memposisikan gambar ke tengah */
+  width: 80%;
+  /* Ukuran gambar */
+  border-radius: 8px;
+}
+
+.card-fitur h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+  position: relative;
+  /* Mengatur posisi relatif untuk menempatkan garis bawah */
+}
+
+.card-fitur h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1px;
+  /* Mengatur jarak dari teks ke garis bawah */
+  width: calc(10% + 40px);
+  /* Panjang garis bawah (ditambahkan 40px untuk memperpanjang ke kanan dan kiri) */
+  height: 4px;
+  /* Ketebalan garis bawah */
+  background-color: #00f;
+  /* Warna biru langit */
+  transition: width 0.3s ease;
+  /* Efek transisi saat hover */
+  position: relative;
+  /* tambahkan properti position: relative; untuk memposisikan tombol */
+  display: flex;
+  /* membuat konten menjadi flex */
+  flex-direction: column;
+  /* membuat konten menjadi kolom */
+  justify-content: space-between;
+  /* membuat konten menjadi rata tengah vertikal */
+}
+
+.card-fitur:hover h3::after {
+  width: calc(10% + 80px);
+  /* Memperpanjang garis bawah saat hover (ditambahkan 80px untuk memperpanjang ke kanan dan kiri) */
+}
+
+.card-fitur p {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-fitur .tombol {
+  text-align: center;
+  /* mengatur teks pada tombol agar berada di tengah */
+}
+
+
+.card-fitur button {
+
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: transparent;
+  /* Hapus background warna */
+  color: #00f;
+  /* Warna teks */
+  border: 2px solid #00f;
+  /* Tambahkan border */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Efek transisi saat hover */
+}
+
+.card-fitur button:hover {
+  background-color: #00f;
+  /* Warna background saat hover */
+  color: #fff;
+  /* Warna teks saat hover */
+}
+
+/* ------------------------------------------------------------BERITA BERANDA--------------------------------------------------------- */
+.container-berita-beranda {
+  display: flex;
+}
+
+.judul-berita-beranda {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+
+}
+
+.paginator-berita-beranda {
+  text-align: center;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  /* Untuk membuat ikon sejajar dengan teks */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  /* Untuk membuat ikon sejajar dengan teks */
+}
+
+.date-text {
+  margin-left: 10px;
+  /* Spasi antara teks dan ikon */
+}

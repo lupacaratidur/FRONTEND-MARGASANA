@@ -1,0 +1,27 @@
+.logo {
+  width: 50px;
+  /* Atur lebar sesuai kebutuhan */
+  height: auto;
+  /* Untuk menjaga aspek rasio */
+  margin-right: 0px;
+  /* Atur margin agar terpisah dari elemen lain */
+}
+
+.menu-horizontal {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  /* Mengatur border radius hanya pada bagian bawah */
+  border-bottom-right-radius: 10px;
+  /* Mengatur border radius hanya pada bagian bawah */
+}
+
+.sticky-navbar {
+  position: -webkit-sticky;
+  /* Untuk browser Webkit, seperti Chrome */
+  position: sticky;
+  /* Untuk browser modern */
+  top: 0;
+  z-index: 9999;
+  /* Atur sesuai kebutuhan */
+}

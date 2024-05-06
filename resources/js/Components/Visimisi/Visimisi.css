@@ -1,0 +1,61 @@
+/* ---------------------------------------------CAROUSEL--------------------------------------------------- */
+.container-carousel {
+  margin-bottom: 120px;
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Lebar penuh */
+  height: 90vh;
+  /* Tinggi sesuai tinggi viewport */
+}
+
+.carousel-item img {
+  width: 100%;
+  /* Lebar penuh */
+  height: 100%;
+  /* Tinggi penuh */
+  object-fit: cover;
+  /* Menyesuaikan gambar ke dalam ukuran kontainer */
+}
+
+.blue-line-carousel {
+  width: 100px;
+  /* Panjang garis */
+  height: 6px;
+  /* Lebar garis */
+  background-color: blue;
+  /* Warna garis */
+  margin-top: 10px;
+  /* Jarak antara garis dan teks */
+}
+
+/* -----------------------------------------VISI DAN MISI----------------------------------------------- */
+.blue-line-visi {
+  width: 50px;
+  /* Panjang garis */
+  height: 6px;
+  /* Lebar garis */
+  background-color: blue;
+  /* Warna garis */
+  margin-top: 10px;
+  /* Jarak antara garis dan teks */
+}
+
+.neutral-line {
+  width: 800px;
+  /* Panjang garis */
+  height: 1px;
+  /* Lebar garis */
+  background-color: rgb(191, 191, 206);
+  /* Warna garis */
+  margin-top: 150px;
+  /* Jarak antara garis dan teks */
+}

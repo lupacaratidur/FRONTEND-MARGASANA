@@ -1,0 +1,54 @@
+/* -------------------------------------------CAROUSEL----------------------------------------------------- */
+.container-carousel {
+  margin-bottom: 120px;
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Lebar penuh */
+  height: 90vh;
+  /* Tinggi sesuai tinggi viewport */
+}
+
+.carousel-item img {
+  width: 100%;
+  /* Lebar penuh */
+  height: 100%;
+  /* Tinggi penuh */
+  object-fit: cover;
+  /* Menyesuaikan gambar ke dalam ukuran kontainer */
+}
+
+/* ------------------------------------GARIS BAWAH BIRU----------------------------------------- */
+
+.blue-line-pemerintah-desa {
+  width: 50px;
+  /* Panjang garis */
+  height: 6px;
+  /* Lebar garis */
+  background-color: blue;
+  /* Warna garis */
+  margin-top: 10px;
+  /* Jarak antara garis dan teks */
+}
+
+/* --------------------------------------------------CARD-------------------------------------------------- */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(20% - 20px);
+  /* Lebar 20% dari container dengan jarak 20px antara setiap item */
+  margin-bottom: 20px;
+  /* Jarak bawah antara setiap item */
+}
